@@ -1,4 +1,6 @@
-This is a scaffold for angular 1.
+This is a scaffold for :
+
+* angular 1
 
 Submitting issues and pull requests is more than welcome.
 
