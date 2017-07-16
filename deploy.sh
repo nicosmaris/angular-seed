@@ -1,8 +1,8 @@
 #!/bin/bash
 #
-p=../_site/$TRAVIS_BRANCH/$TRAVIS_BUILD_NUMBER
+p=../_site/$TRAVIS_BUILD_NUMBER
 mkdir -p $p
-cp -R !(.|..|.git) $p
+cp -R angular1 $p
 git config credential.helper "store --file=.git/credentials"
 echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 
