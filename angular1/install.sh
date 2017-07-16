@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# The build uses the chrome version installed already at travis
+# To install the latest, uncomment the following code
 
 sh -e /etc/init.d/xvfb start
 #wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
