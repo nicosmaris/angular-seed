@@ -11,7 +11,7 @@ echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 git config user.name "deploy.sh"
 git config user.email "deploy.sh@gmail.com"
 
-git clone git@github.com:nicosmaris/front-end-ci.git
+git clone "https://$GH_TOKEN@github.com/nicosmaris/front-end-ci.git"
 cd front-end-ci
 git checkout gh-pages
 cp -R ../../_site/ .
