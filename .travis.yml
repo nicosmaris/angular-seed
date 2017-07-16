@@ -23,6 +23,11 @@ script:
 after_success:
 - bash deploy.sh
 
+branches:
+  only:
+  - gh-pages     # test the gh-pages branch
+  - /(.*)/       # test every other branch
+
 # Travis needs the token to push to github gh-pages
 env:
   global:
