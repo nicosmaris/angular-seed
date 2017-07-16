@@ -3,3 +3,8 @@ branches:
     - gh-pages     # test the gh-pages branch
     - /(.*)/       # test every other branch
 
+install:
+  - echo 'nothing to install'
+
+script:
+  - echo 'nothing to run'
