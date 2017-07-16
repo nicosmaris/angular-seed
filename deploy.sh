@@ -1,12 +1,12 @@
 #!/bin/bash
 #
-p=_site/$TRAVIS_BRANCH/$TRAVIS_BUILD_NUMBER
+p=../_site/$TRAVIS_BRANCH/$TRAVIS_BUILD_NUMBER
 mkdir -p $p
 cp -R . $p
 git config credential.helper "store --file=.git/credentials"
 echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 
-cd $p
+cd ../_site
 
 git init
 git config user.name "deploy.sh"
