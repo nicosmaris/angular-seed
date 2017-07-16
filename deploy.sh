@@ -1,8 +1,6 @@
 #!/bin/bash
 #
-branch=$(git rev-parse --abbrev-ref HEAD)
-rev=$(git rev-parse --short HEAD)
-p=_site/$branch/${rev}
+p=_site/$TRAVIS_BRANCH/$TRAVIS_COMMIT
 mkdir -p $p
 cp -R . $p
 git config credential.helper "store --file=.git/credentials"
@@ -20,5 +18,5 @@ git fetch upstream && git reset upstream/gh-pages
 touch .
 
 git add -A .
-git commit -m "Add commit ${rev} of branch ${branch}" 
+git commit -m "Add commit $TRAVIS_COMMIT of branch $TRAVIS_BRANCH" 
 git push -q upstream HEAD:gh-pages
