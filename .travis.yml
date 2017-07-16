@@ -14,6 +14,7 @@ install:
   - sudo apt-get install -q google-chrome-stable
 
 before_script:
+  - cd angular1
   - npm install
 
 script:
@@ -21,10 +22,10 @@ script:
   - (npm start > /dev/null &) && (npm run protractor)
 
 after_success:
-- bash deploy.sh
+  - bash deploy.sh
 
 branches:
   only:
-  - gh-pages     # test the gh-pages branch
-  - /(.*)/       # test every other branch
+    - gh-pages     # test the gh-pages branch
+    - /(.*)/       # test every other branch
 
