@@ -4,18 +4,17 @@ p=../_site/$TRAVIS_BUILD_NUMBER
 mkdir -p $p
 cp -R angular1 $p
 cp .gitignore $p
+
 git config credential.helper "store --file=.git/credentials"
 echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 
-cd ../_site
-
-git init
 git config user.name "deploy.sh"
 git config user.email "deploy.sh@gmail.com"
 
-git remote add upstream "https://$GH_TOKEN@github.com/nicosmaris/front-end-ci.git"
-git fetch upstream #&& git reset upstream/gh-pages
-
+git clone git@github.com:nicosmaris/front-end-ci.git
+cd front-end-ci
+git checkout gh-pages
+cp -R ../../_site/ .
 touch .
 
 git add -A .
