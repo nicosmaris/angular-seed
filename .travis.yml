@@ -1,0 +1,12 @@
+sudo: required
+dist: trusty
+
+language: node_js
+node_js:
+  - '4.5'
+
+install:
+  - echo 'do nothing'
+
+script:
+  - echo 'do nothing...'
