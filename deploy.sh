@@ -3,6 +3,7 @@
 p=../_site/$TRAVIS_BUILD_NUMBER
 mkdir -p $p
 cp -R angular1 $p
+cp .gitignore $p
 git config credential.helper "store --file=.git/credentials"
 echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 
@@ -18,6 +19,6 @@ git fetch upstream && git reset upstream/gh-pages
 touch .
 
 git add -A .
-git commit -m "Add commit $TRAVIS_COMMIT of branch $TRAVIS_BRANCH after successful travis builder number $TRAVIS_BUILD_NUMBER" 
+git commit -m "build $TRAVIS_BUILD_NUMBER has commit $TRAVIS_COMMIT of branch $TRAVIS_BRANCH" 
 git push -q upstream HEAD:gh-pages
 
