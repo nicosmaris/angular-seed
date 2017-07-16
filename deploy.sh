@@ -19,5 +19,5 @@ touch .
 
 git add -A .
 git commit -m "build $TRAVIS_BUILD_NUMBER has commit $TRAVIS_COMMIT of branch $TRAVIS_BRANCH" 
-git push -q upstream HEAD:gh-pages
+git push
 
