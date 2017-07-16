@@ -4,8 +4,7 @@
 rev=$(git rev-parse --short HEAD)
 
 mkdir -p _site
-cp -R app _site/
-cp index.html _site/
+cp -R . _site/
 git config credential.helper "store --file=.git/credentials"
 echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 
