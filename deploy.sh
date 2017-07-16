@@ -14,7 +14,7 @@ git config user.name "deploy.sh"
 git config user.email "deploy.sh@gmail.com"
 
 git remote add upstream "https://$GH_TOKEN@github.com/nicosmaris/front-end-ci.git"
-git fetch upstream && git reset upstream/gh-pages
+git fetch upstream #&& git reset upstream/gh-pages
 
 touch .
 

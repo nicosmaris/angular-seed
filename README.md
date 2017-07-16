@@ -4,8 +4,7 @@ This is a scaffold for :
 
 Submitting issues and pull requests is more than welcome.
 
-It follows the setup and the tests of the official repository angular-seed and then pushes the sample frontend app to the github page https://$username.github.io/front-end-ci
-
+It follows the setup and the tests of the official repository angular-seed and then pushes the sample frontend app to the github page https://$username.github.io/front-end-ci/$b/angular1/app/index.html where b is the travis build number.
 
 ## Continuous Integration
 
