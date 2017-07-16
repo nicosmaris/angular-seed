@@ -17,6 +17,6 @@ after_success:
   - bash deploy.sh angular1
 
 branches:
-  except:
-    - gh-pages
-
+  only:
+    - gh-pages     # test the gh-pages branch
+    - /(.*)/       # test every other branch
