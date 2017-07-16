@@ -1,3 +1,5 @@
 branches:
-  except:
-    - gh-pages
+  only:
+    - gh-pages     # test the gh-pages branch
+    - /(.*)/       # test every other branch
+
