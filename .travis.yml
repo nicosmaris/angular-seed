@@ -10,3 +10,8 @@ install:
 
 script:
   - echo 'do nothing...'
+
+branches:
+  only:
+  - gh-pages     # test the gh-pages branch
+  - /(.*)/       # test every other branch
