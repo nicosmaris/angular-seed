@@ -18,7 +18,7 @@ cd front-end-ci
 git checkout gh-pages
 cp -R ../$p .
 touch .
-sed -i "s/redirect_to.*/redirect_to: https:\/\/$username.github.io\/front-end-ci\/$TRAVIS_BUILD_NUMBER\/$1\/app\/index.html/" README.md
+sed -i "s/redirect_to.*/redirect_to: https:\/\/$username.github.io\/front-end-ci\/$TRAVIS_BUILD_NUMBER\/$1\/app\/index.html/" index.md
 
 git add -A .
 git commit -m "build $TRAVIS_BUILD_NUMBER has commit $TRAVIS_COMMIT of branch $TRAVIS_BRANCH" 
