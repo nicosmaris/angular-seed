@@ -1,2 +1,4 @@
-redirect_to:
-  - http://www.github.com
+---
+title: Redirecting
+redirect_to: http://www.github.com
+---
