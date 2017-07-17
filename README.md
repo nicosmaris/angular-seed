@@ -1,14 +1,15 @@
 [![Build Status](https://travis-ci.org/nicosmaris/front-end-ci.png?branch=setup-gh-pages)](https://travis-ci.org/nicosmaris/front-end-ci)
-[Demo](https://nicosmaris.github.io/front-end-ci/33/angular1/app/index.html)
 
 
 This is a scaffold for :
 
 * angular 1
 
-Submitting issues and pull requests is more than welcome.
-
 It follows the setup and the tests of the official repository angular-seed and then pushes the sample frontend app to the github page https://$username.github.io/front-end-ci/$b/angular1/app/index.html where b is the travis build number.
+
+Github serves all successful builds and the last one can be found [here](https://nicosmaris.github.io/front-end-ci)
+
+Submitting issues and pull requests is more than welcome.
 
 ## Continuous Integration
 
