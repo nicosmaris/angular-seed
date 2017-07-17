@@ -3,4 +3,3 @@ description: "Demo"
 markdown: kramdown
 gems:
   - jekyll-redirect-from
-  - jekyll-readme-index
