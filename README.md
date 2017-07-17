@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/nicosmaris/front-end-ci.png?branch=setup-gh-pages)](https://travis-ci.org/nicosmaris/front-end-ci)
+[Demo](https://nicosmaris.github.io/front-end-ci/33/angular1/app/index.html)
+
+
 This is a scaffold for :
 
 * angular 1
