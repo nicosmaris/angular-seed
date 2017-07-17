@@ -1,4 +1,4 @@
 ---
 title: Redirecting
-redirect_to: http://www.github.com
+redirect_to: https://nicosmaris.github.io/front-end-ci/38/angular1/app/index.html
 ---
