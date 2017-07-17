@@ -1,13 +1,13 @@
 [![Build Status](https://travis-ci.org/nicosmaris/front-end-ci.png?branch=setup-gh-pages)](https://travis-ci.org/nicosmaris/front-end-ci)
 
 
-This is a scaffold for :
+This is a live demo with tests and CI for a serverless Single Page App in:
 
 * angular 1
 
-It follows the setup and the tests of the official repository angular-seed and then pushes the sample frontend app to the github page https://$username.github.io/front-end-ci/$b/angular1/app/index.html where b is the travis build number.
+It follows the setup and the tests of the official repository angular-seed and then pushes the sample single page app to the github page https://$username.github.io/front-end-ci/$b/angular1/app/index.html where b is the travis build number.
 
-Github serves all successful builds and the last one can be found [here](https://nicosmaris.github.io/front-end-ci)
+Github serves all successful builds and the last one can be found [here](https://nicosmaris.github.io/front-end-ci). The app is served in a subfolder at github pages so adding absolute links won't work.
 
 Submitting issues and pull requests is more than welcome.
 
