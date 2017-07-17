@@ -3,6 +3,8 @@
 p=../_site/$TRAVIS_BUILD_NUMBER
 mkdir -p $p
 cp -R $1 $p
+# if there is client side code, deploy it too
+find . -type d -name bower_components -exec cp -R {} $p \;
 
 git config credential.helper "store --file=.git/credentials"
 echo "https://${GH_TOKEN}:@github.com" > .git/credentials
